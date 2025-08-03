@@ -1,0 +1,21 @@
+Dev.to Cover Image Requirements:
+- Dimensions: 1000x420px (recommended)
+- File size: Under 1MB
+- Format: PNG or JPG
+
+Suggested Cover Image Ideas for Aurora Serverless v2 Migration Post:
+1. AWS RDS logo transitioning to Aurora logo with an arrow
+2. Database icon with upward scaling arrows showing auto-scaling
+3. Split screen showing "Before: RDS" and "After: Aurora Serverless v2" with metrics
+4. Cloud architecture diagram showing the migration flow
+5. Dashboard showing cost savings graph
+
+You can create a cover image using:
+- Canva (free templates)
+- Figma (free design tool)
+- AWS Architecture Icons (official AWS icons)
+- Excalidraw (for simple diagrams)
+
+Or use a stock photo from:
+- Unsplash (search "database" or "cloud")
+- Pexels (search "aws" or "server")

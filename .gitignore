@@ -1,0 +1,43 @@
+# Planning and Documentation
+*instruction*.md
+*-guide.md
+*-topics.md
+*-draft*.md
+planning/
+private/
+drafts/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+.cache/
+
+# Sensitive files
+.env
+.env.local
+secrets/
+credentials/
+
+# Build outputs (if any future build tools are added)
+dist/
+build/
+node_modules/
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Personal notes
+notes/
+todo.txt
+TODO.md
