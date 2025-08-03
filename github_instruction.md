@@ -1,68 +1,67 @@
-# Garrett Yan – AWS DevOps Engineer GitHub.io Portfolio Plan
+# Garrett Yan – AWS DevOps Engineer GitHub.io Portfolio
 
-## **Background**
+## **Overview**
 
-- **Role & Expertise:** AWS DevOps Engineer with extensive experience in on-premises to AWS migration, CI/CD pipelines, HIPAA compliance, EC2 auto-scaling groups, Aurora Serverless v2, Redis caching, and queue-based architectures.
-- **AWS Certifications:**
+Clean, researcher-style portfolio page showcasing AWS expertise through technical publications, similar to how academics display their research.
+
+## **Design Philosophy**
+
+- **Minimalist Approach:** Single-page design focusing on content over complexity
+- **Publication-Focused:** Technical expertise demonstrated through published articles on Dev.to and other platforms
+- **Professional Simplicity:** Clean layout with photo, brief intro, certifications, and publication list
+
+## **Current Structure**
+
+### **Profile Section**
+- Professional photo
+- Name and title: "AWS DevOps Engineer"
+- Brief 2-3 line introduction highlighting specializations
+
+### **AWS Certifications**
+- Visual display of three certification badges:
   - AWS Certified Solutions Architect – Associate
-  - AWS Certified Security – Specialty
+  - AWS Certified Security – Specialty  
   - AWS Certified Machine Learning – Specialty
-- **Additional Strengths:**
-  - Expertise in cloud security and compliance, with practical experience in regulated industries.
-  - Skilled in integrating AI/ML workflows on AWS (MLOps), making use of AWS services such as SageMaker.
-  - Strong background in infrastructure automation (Terraform), cost optimization, and performance tuning.
 
-## **Goal for GitHub.io Profile**
+### **Technical Publications**
+- Chronological list of technical articles
+- Format: Date | Title | Platform | Link
+- Topics covering AWS architecture, DevOps, MLOps, and cloud security
 
-Garrett wants to create a **professional GitHub.io portfolio site** that functions as a **central hub** for his personal brand and showcases his AWS expertise. The goal is to **increase credibility**, **demonstrate thought leadership**, and **raise his market value** as a senior AWS DevOps engineer.
+### **Contact**
+- Simple links: LinkedIn | GitHub | Email | Resume
 
-### **Key Objectives:**
+## **Content Strategy**
 
-1. **Showcase Technical Depth:**
+### **Publication Platform**
+- **Primary:** Dev.to for technical AWS content
+- **Focus:** In-depth technical tutorials and implementation guides
+- **Frequency:** Regular publication of high-quality technical content
 
-   - Highlight hands-on work with AWS architecture (e.g., migration diagrams, CI/CD pipelines, serverless infrastructure).
-   - Provide short case studies or success stories (e.g., cost optimization, HIPAA-compliant deployments).
+### **Article Topics**
+- AWS service implementations (Aurora Serverless, EC2, etc.)
+- Infrastructure as Code (Terraform)
+- CI/CD pipelines and DevOps practices
+- HIPAA compliance and security
+- MLOps and SageMaker implementations
+- Cost optimization strategies
 
-2. **Leverage AWS Certifications:**
+## **Technical Implementation**
 
-   - Display certification badges (Credly links) prominently to validate expertise in architecture, security, and machine learning.
+- **Static HTML:** Simple, fast-loading single page
+- **Responsive Design:** Mobile-friendly layout
+- **Minimal Dependencies:** No complex frameworks needed
+- **GitHub Pages Hosting:** Free, reliable hosting
 
-3. **Publish Thought Leadership Content:**
+## **Maintenance**
 
-   - Integrate links to blog posts (Medium, Dev.to, or LinkedIn Articles).
-   - Share practical guides and lessons learned from real-world AWS projects.
+- Update publication list as new articles are published
+- Keep certifications current
+- Maintain professional photo and contact information
 
-4. **Position as a Cloud + AI Expert:**
+## **Success Metrics**
 
-   - Demonstrate ability to combine AWS DevOps skills with AI/ML infrastructure (MLOps), an in-demand niche.
-
-5. **Professional First Impression:**
-   - Ensure that anyone (recruiter, manager, or partner) who Googles Garrett’s name finds a polished **portfolio site** that reinforces his skills and experience.
-
-## **Planned Structure for GitHub.io**
-
-- **Home Page:**
-
-  - Brief introduction & summary of Garrett’s expertise.
-  - Highlight AWS certifications.
-  - Links to LinkedIn and blog posts.
-
-- **Case Studies & Projects:**
-
-  - Write-ups of major AWS projects (on-prem migration, CI/CD setup, cost optimization with auto-scaling and Redis, HIPAA compliance).
-
-- **Certifications Page:**
-
-  - Display AWS certification badges with brief explanations of each certification’s focus.
-
-- **Blog Section:**
-
-  - Links to articles on Medium or Dev.to covering AWS topics (e.g., Aurora Serverless v2, CI/CD best practices, AWS cost optimization).
-
-- **Contact Section:**
-  - Links to LinkedIn, email, and possibly a downloadable resume.
-
-## **Outcome & Long-Term Plan**
-
-- **Immediate Outcome:** A professional GitHub.io profile that can be shared in resumes, LinkedIn, or interviews to showcase Garrett’s technical expertise.
-- **Long-Term Plan:** Publish 2–3 high-quality AWS-related blog posts to establish thought leadership, then integrate them into the GitHub.io site. Over time, expand the portfolio with architecture diagrams, open-source Terraform modules, or example CI/CD templates to create public proof of expertise.
+- Professional presence when searched online
+- Demonstration of expertise through published content
+- Easy contact for opportunities
+- Clean, memorable impression

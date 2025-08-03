@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Garrett Yan | AWS DevOps Engineer Portfolio</title>
+  <title>Garrett Yan | AWS DevOps Engineer</title>
   <style>
     * {
       margin: 0;
@@ -14,266 +14,250 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       line-height: 1.6;
-      background-color: #f5f7fa;
+      background-color: #fff;
       color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
     }
     
-    header {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
-      padding: 40px 20px;
+    .profile-section {
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin: 40px 0 60px 0;
     }
     
-    header h1 {
-      font-size: 2.5em;
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
       margin-bottom: 20px;
+      border: 3px solid #e0e0e0;
+    }
+    
+    h1 {
+      font-size: 2em;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+    
+    .subtitle {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    
+    .intro {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #555;
+      line-height: 1.7;
+    }
+    
+    section {
+      margin-bottom: 60px;
+    }
+    
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 25px;
+      color: #1a1a1a;
       font-weight: 600;
     }
     
-    nav {
+    .certifications {
       display: flex;
       justify-content: center;
+      gap: 40px;
       flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    
+    .cert-badge {
+      text-align: center;
+    }
+    
+    .cert-badge img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+    
+    .cert-badge p {
+      font-size: 0.9em;
+      color: #666;
+      max-width: 150px;
+    }
+    
+    .publications {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .publication-item {
+      padding: 20px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .publication-item:last-child {
+      border-bottom: none;
+    }
+    
+    .publication-date {
+      color: #999;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+    
+    .publication-title {
+      font-size: 1.1em;
+      font-weight: 500;
+      margin-bottom: 5px;
+      color: #1a1a1a;
+    }
+    
+    .publication-platform {
+      display: inline-block;
+      background-color: #f0f0f0;
+      padding: 3px 10px;
+      border-radius: 3px;
+      font-size: 0.85em;
+      color: #666;
+      margin-right: 10px;
+    }
+    
+    .publication-link {
+      color: #2a5298;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    
+    .publication-link:hover {
+      text-decoration: underline;
+    }
+    
+    .contact {
+      text-align: center;
+      padding-top: 40px;
+      border-top: 1px solid #e0e0e0;
+    }
+    
+    .contact-links {
+      display: flex;
+      justify-content: center;
       gap: 30px;
       margin-top: 20px;
     }
     
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 8px 16px;
-      border-radius: 4px;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-    
-    nav a:hover {
-      background-color: rgba(255,255,255,0.2);
-      transform: translateY(-2px);
-    }
-    
-    section {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 40px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    }
-    
-    h2 {
-      color: #1e3c72;
-      font-size: 2em;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      border-bottom: 3px solid #e8f0fe;
-    }
-    
-    h3 {
-      color: #2a5298;
-      margin: 20px 0 10px 0;
-      font-size: 1.3em;
-    }
-    
-    p {
-      margin-bottom: 15px;
-      line-height: 1.8;
-    }
-    
-    ul {
-      margin-left: 30px;
-      margin-bottom: 20px;
-    }
-    
-    ul li {
-      margin-bottom: 8px;
-    }
-    
-    a {
-      color: #2a5298;
+    .contact-links a {
+      color: #666;
       text-decoration: none;
       transition: color 0.3s;
     }
     
-    a:hover {
-      color: #1e3c72;
-      text-decoration: underline;
+    .contact-links a:hover {
+      color: #2a5298;
     }
     
-    #skills div {
-      background: #f8f9fa;
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid #e9ecef;
-    }
-    
-    #projects > div, #blog > div {
-      background: #f8f9fa;
-      padding: 25px;
-      margin: 20px 0;
-      border-radius: 8px;
-      border-left: 4px solid #2a5298;
-    }
-    
-    #contact {
-      text-align: center;
-    }
-    
-    #contact p {
-      margin: 20px 0;
-    }
-    
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.8em;
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
       }
       
-      nav {
-        gap: 15px;
+      h1 {
+        font-size: 1.7em;
       }
       
-      section {
-        margin: 20px;
-        padding: 25px;
+      .certifications {
+        gap: 20px;
       }
       
-      h2 {
-        font-size: 1.5em;
+      .cert-badge img {
+        width: 100px;
+        height: 100px;
+      }
+      
+      .contact-links {
+        flex-direction: column;
+        gap: 10px;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Garrett Yan – AWS DevOps Engineer</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#certs">Certifications</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Case Studies</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="profile-section">
+    <img src="images/profile-placeholder.svg" alt="Garrett Yan" class="profile-photo" />
+    <h1>Garrett Yan</h1>
+    <p class="subtitle">AWS DevOps Engineer</p>
+    <p class="intro">
+      Specializing in cloud-native architectures, infrastructure automation, and MLOps implementations. 
+      Passionate about building scalable, secure, and cost-effective solutions on AWS.
+    </p>
+  </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm an AWS DevOps Engineer with extensive experience in designing and implementing cloud-native solutions. My expertise spans from on-premises to AWS migrations, building robust CI/CD pipelines, and ensuring HIPAA compliance in regulated industries.</p>
-    <p>I specialize in:</p>
-    <ul>
-      <li><strong>Cloud Architecture:</strong> EC2 auto-scaling groups, Aurora Serverless v2, Redis caching, and queue-based architectures</li>
-      <li><strong>DevOps Excellence:</strong> CI/CD pipeline design, infrastructure automation with Terraform, and performance optimization</li>
-      <li><strong>Security & Compliance:</strong> HIPAA-compliant deployments, security best practices, and cost optimization strategies</li>
-      <li><strong>AI/ML Infrastructure:</strong> MLOps implementation using AWS SageMaker and related services</li>
-    </ul>
-    <p>With three AWS certifications (Solutions Architect Associate, Security Specialty, and Machine Learning Specialty), I bring a comprehensive understanding of AWS services and best practices to every project.</p>
-  </section>
-
-  <section id="certs">
+  <section>
     <h2>AWS Certifications</h2>
-    <div style="margin: 20px 0;">
-      <h3>AWS Certified Solutions Architect – Associate</h3>
-      <p>Demonstrates expertise in designing distributed applications and systems on AWS, including architectural best practices for reliability, performance efficiency, security, and cost optimization.</p>
-      
-      <h3>AWS Certified Security – Specialty</h3>
-      <p>Validates advanced skills in securing AWS environments, implementing security controls, and ensuring compliance with industry standards and regulations.</p>
-      
-      <h3>AWS Certified Machine Learning – Specialty</h3>
-      <p>Confirms proficiency in building, training, tuning, and deploying machine learning models using AWS services, essential for modern MLOps implementations.</p>
-    </div>
-    <p style="font-style: italic;">Verify certifications on <a href="https://www.credly.com" target="_blank">Credly</a></p>
-  </section>
-
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-      <div>
-        <h3>AWS Services</h3>
-        <ul>
-          <li>EC2, Auto Scaling Groups</li>
-          <li>Aurora Serverless v2, RDS</li>
-          <li>ElastiCache (Redis)</li>
-          <li>SQS, SNS, EventBridge</li>
-          <li>Lambda, API Gateway</li>
-          <li>SageMaker</li>
-        </ul>
+    <div class="certifications">
+      <div class="cert-badge">
+        <img src="https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="AWS Solutions Architect Associate" />
+        <p>Solutions Architect<br>Associate</p>
       </div>
-      <div>
-        <h3>DevOps Tools</h3>
-        <ul>
-          <li>Terraform</li>
-          <li>Jenkins, GitHub Actions</li>
-          <li>Docker, Kubernetes</li>
-          <li>CloudFormation</li>
-          <li>Ansible</li>
-          <li>Prometheus, Grafana</li>
-        </ul>
+      <div class="cert-badge">
+        <img src="https://images.credly.com/images/53acdae5-d69f-4dda-b650-d02ed7a50dd7/image.png" alt="AWS Security Specialty" />
+        <p>Security<br>Specialty</p>
       </div>
-      <div>
-        <h3>Programming</h3>
-        <ul>
-          <li>Python</li>
-          <li>Bash/Shell Scripting</li>
-          <li>YAML</li>
-          <li>SQL</li>
-          <li>JavaScript</li>
-        </ul>
+      <div class="cert-badge">
+        <img src="https://images.credly.com/images/778bde6c-ad1c-4312-ac33-2fa40d50a147/image.png" alt="AWS Machine Learning Specialty" />
+        <p>Machine Learning<br>Specialty</p>
       </div>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Case Studies</h2>
-    
-    <div style="margin: 20px 0;">
-      <h3>Large-Scale On-Premises to AWS Migration</h3>
-      <p><strong>Challenge:</strong> Migrate a legacy healthcare application with strict HIPAA compliance requirements from on-premises infrastructure to AWS.</p>
-      <p><strong>Solution:</strong> Designed and implemented a phased migration strategy using AWS Migration Hub, ensuring zero downtime and full HIPAA compliance. Utilized Aurora Serverless v2 for database modernization and implemented comprehensive security controls.</p>
-      <p><strong>Results:</strong> 40% reduction in infrastructure costs, 99.99% uptime achieved, and successful HIPAA audit completion.</p>
-    </div>
-    
-    <div style="margin: 20px 0;">
-      <h3>CI/CD Pipeline Transformation</h3>
-      <p><strong>Challenge:</strong> Replace manual deployment processes with automated CI/CD pipelines for a microservices architecture.</p>
-      <p><strong>Solution:</strong> Built comprehensive CI/CD pipelines using GitHub Actions and AWS CodePipeline, integrated with automated testing and security scanning. Implemented blue-green deployments with ALB and Auto Scaling Groups.</p>
-      <p><strong>Results:</strong> Deployment time reduced from 4 hours to 15 minutes, deployment frequency increased by 300%, and zero production incidents from deployments.</p>
-    </div>
-    
-    <div style="margin: 20px 0;">
-      <h3>High-Performance Caching Architecture</h3>
-      <p><strong>Challenge:</strong> Application experiencing performance bottlenecks with database queries affecting user experience.</p>
-      <p><strong>Solution:</strong> Implemented multi-layer caching strategy using ElastiCache Redis clusters, queue-based architecture with SQS, and optimized database queries with read replicas.</p>
-      <p><strong>Results:</strong> 80% reduction in API response times, 60% decrease in database load, and improved application scalability to handle 10x traffic spikes.</p>
-    </div>
+  <section>
+    <h2>Technical Publications</h2>
+    <ul class="publications">
+      <li class="publication-item">
+        <div class="publication-date">November 2024</div>
+        <div class="publication-title">Optimizing Aurora Serverless v2 for High-Traffic Applications</div>
+        <span class="publication-platform">Dev.to</span>
+        <a href="#" class="publication-link">[View Article]</a>
+      </li>
+      <li class="publication-item">
+        <div class="publication-date">October 2024</div>
+        <div class="publication-title">HIPAA Compliance on AWS: A Practical Implementation Guide</div>
+        <span class="publication-platform">Medium</span>
+        <a href="#" class="publication-link">[View Article]</a>
+      </li>
+      <li class="publication-item">
+        <div class="publication-date">September 2024</div>
+        <div class="publication-title">Terraform Best Practices for Multi-Region AWS Deployments</div>
+        <span class="publication-platform">Hashnode</span>
+        <a href="#" class="publication-link">[View Article]</a>
+      </li>
+      <li class="publication-item">
+        <div class="publication-date">August 2024</div>
+        <div class="publication-title">Building Cost-Effective MLOps Pipelines with AWS SageMaker</div>
+        <span class="publication-platform">Dev.to</span>
+        <a href="#" class="publication-link">[View Article]</a>
+      </li>
+      <li class="publication-item">
+        <div class="publication-date">July 2024</div>
+        <div class="publication-title">Zero-Downtime Database Migration Strategies: RDS to Aurora Serverless</div>
+        <span class="publication-platform">AWS Community</span>
+        <a href="#" class="publication-link">[View Article]</a>
+      </li>
+    </ul>
   </section>
 
-  <section id="blog">
-    <h2>Thought Leadership</h2>
-    <p>I share insights and best practices from real-world AWS projects through technical articles and guides.</p>
-    <div style="margin: 20px 0;">
-      <h3>Recent Articles</h3>
-      <ul>
-        <li><a href="#" target="_blank">Optimizing Aurora Serverless v2 for Cost and Performance</a></li>
-        <li><a href="#" target="_blank">Building HIPAA-Compliant CI/CD Pipelines on AWS</a></li>
-        <li><a href="#" target="_blank">MLOps Best Practices: From Development to Production</a></li>
-        <li><a href="#" target="_blank">Multi-Region Disaster Recovery Strategies for AWS</a></li>
-      </ul>
-    </div>
-    <p>Follow my technical writing on <a href="https://medium.com" target="_blank">Medium</a> and <a href="https://dev.to" target="_blank">Dev.to</a></p>
-  </section>
-
-  <section id="contact">
+  <div class="contact">
     <h2>Contact</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/garrettyan" target="_blank">LinkedIn</a> | 
-      <a href="https://github.com/garrettyan" target="_blank">GitHub</a> | 
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/garrettyan" target="_blank">LinkedIn</a>
+      <a href="https://github.com/garrettyan" target="_blank">GitHub</a>
       <a href="mailto:contact@garrettyan.com">Email</a>
-    </p>
-    <p style="margin-top: 20px;">
-      <a href="#" download style="background: #222; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Download Resume</a>
-    </p>
-  </section>
+      <a href="#" download>Resume</a>
+    </div>
+  </div>
 </body>
 </html>
