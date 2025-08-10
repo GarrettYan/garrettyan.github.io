@@ -3,6 +3,10 @@
 *-guide.md
 *-topics.md
 *-draft*.md
+blog-post-tracker.md
+blog-posts/
+*.md
+!README.md
 planning/
 private/
 drafts/
