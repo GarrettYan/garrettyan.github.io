@@ -28,6 +28,7 @@ drafts/
 # Sensitive files
 .env
 .env.local
+PLAYBOOK.md
 secrets/
 credentials/
 
