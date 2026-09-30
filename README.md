@@ -108,6 +108,25 @@ git push
 
 GitHub Pages will rebuild the site automatically within a couple of minutes.
 
+## Published Posts
+
+All posts are part of the **AWS Cost Optimization Series** on Dev.to.
+
+| # | Title | Date | Dev.to ID | File | URL |
+|---|---|---|---|---|---|
+| 8 | Serverless vs Containers: A Cost Analysis with Real Numbers | Sept 2026 | 4779340 | `serverless-vs-containers-cost-analysis.md` | [View](https://dev.to/garrett_yan/serverless-vs-containers-a-cost-analysis-with-real-numbers-3dao) |
+| 7 | Kubernetes Cost Optimization: Real-World Strategies That Actually Work | Sept 2026 | 4779293 | `kubernetes-cost-optimization.md` | [View](https://dev.to/garrett_yan/kubernetes-cost-optimization-real-world-strategies-that-actually-work-6f3) |
+| 6 | Optimizing Container Cold Starts: From 5s to 500ms | Apr 2025 | — | `container-cold-start-optimization.md` | [View](https://dev.to/garrett_yan/optimizing-container-cold-starts-from-5s-to-500ms-484c) |
+| 5 | Multi-Tenant vs Multi-Instance: How We Cut SaaS Infrastructure Costs by 78% | Jan 2025 | — | `multi-tenant-vs-multi-instance-cost-optimization.md` | [View](https://dev.to/garrett_yan_d4f2213af3329/multi-tenant-vs-multi-instance-how-we-cut-saas-infrastructure-costs-by-78-without-sacrificing-50hi) |
+| 4 | Building Multi-Region Active-Active Architecture on a Budget | Jan 2025 | — | `multi-region-active-active-architecture.md` | [View](https://dev.to/garrett_yan_d4f2213af3329/building-multi-region-active-active-architecture-on-a-budget-409n) |
+| 3 | Zero-Downtime Blue-Green Deployments with 90% Less Infrastructure Cost | Jan 2025 | — | `blue-green-deployment-cost-optimization.md` | [View](https://dev.to/garrett_yan_d4f2213af3329/zero-downtime-blue-green-deployments-with-90-less-infrastructure-cost-5aa4) |
+| 2 | Cutting AWS Auto Scaling Costs by 70% While Maintaining 99.99% Availability | Jan 2025 | — | `asg-cost-optimization-devto-ready.md` | [View](https://dev.to/garrett_yan_d4f2213af3329/cutting-aws-auto-scaling-costs-by-70-while-maintaining-9999-availability-53ae) |
+| 1 | Zero-Downtime RDS to Aurora Serverless v2 Migration: A Step-by-Step Guide | Jan 2025 | — | — | [View](https://dev.to/garrett_yan_d4f2213af3329/zero-downtime-rds-to-aurora-serverless-v2-migration-a-step-by-step-guide-202d) |
+
+Posts #1–6 were published manually before `publish.py` existed, so Dev.to IDs were not tracked. Use `python3 publish.py --list` to look them up if needed.
+
+When adding a new post, add a row to this table with the next number, and update the Dev.to ID from the script output.
+
 ## Quick Reference
 
 | Command | Description |
