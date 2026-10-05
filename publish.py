@@ -63,6 +63,13 @@ def publish_article(file_path, published, article_id=None):
     with open(file_path, "r", encoding="utf-8") as f:
         body_markdown = f.read()
 
+    # Sync frontmatter published state with the --publish flag so Dev.to
+    # doesn't override the API payload when it parses the markdown body.
+    if published:
+        body_markdown = body_markdown.replace(
+            "\npublished: false\n", "\npublished: true\n", 1
+        )
+
     payload = {
         "article": {
             "body_markdown": body_markdown,
